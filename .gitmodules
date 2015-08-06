@@ -1,0 +1,3 @@
+[submodule "Potato"]
+	path = Potato
+	url = https://github.com/maddencs/Potato.git
