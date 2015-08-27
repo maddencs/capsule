@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opportunity>
+  <name>Web Design</name>
+  <value>{% if data.lets_do_it == True %}1170.00{% else %}540.00{% endif %}</value>
+  <milestone>{% if data.lets_do_it == True %}Champion{% else %}Prospect{% endif %}</milestone>
+</opportunity>

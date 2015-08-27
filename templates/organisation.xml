@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<organisation>
+  <name>{{ data.studio_name }}</name>
+  <customFields>
+    <customField>
+      <tag>Prospect</tag>
+    </customField>
+  </customFields>
+  <contacts>
+    {% if data.current_website %}
+    <website>
+      <webService>URL</webService>
+      <webAddress>{{ data.current_website }}</webAddress>
+    </website>
+    {% endif %}
+    <email>
+      <emailAddress>{{ data.email }}</emailAddress>
+    </email>
+    {% if data.secondary_email %}
+    <email>
+      <emailAddress>{{ data.secondary_email }}</emailAddress>
+    </email>
+    {% endif %}
+    <phone>
+      <phoneNumber>{{ data.phone_number }}</phoneNumber>
+    </phone>
+    {% if data.secondary_phone_number %}
+    <phone>
+      <phoneNumber>{{ data.secondary_phone_number }}</phoneNumber>
+    </phone>
+    {% endif %}
+  </contacts>
+</organisation>

@@ -1,0 +1,44 @@
+<form style='display: block'>
+  <label for='Studio Name'>Studio Name:</label>
+  <input name='Studio Name' type=text value="{{ form.studio_name }}">
+<br>
+  <label for='contact name'>Contact Name:</label>
+  <input name='contact name' value="{{ form.contact_name }}">
+<br>
+  <label for='email'>Primary Email:</label>
+  <input name='email' value="{{ form.email }}">
+<br>
+  <label for='Phone number'>Primary Phone #:</label>
+  <input name='Phone number' value="{{ form.phone_number }}">
+<br>
+  <label for='current site status'>Current Website Status:</label>
+  <input name='current site status' value="{{ form.current_website_status }}">
+<br>
+  <label for='need redesign'>Need Redesign:</label>
+  <input type='checkbox' name='need redesign' checked={% if form.need_redesign == True %}'checked'{% else %}'unchecked'{% endif %}>
+<br>
+  <label for='lets do it'>Let's do it!</label>
+  <input type='checkbox' name='lets do it' checked={% if form.lets_do_it == True %}'checked'{% else %}'unchecked'{% endif %}>
+<br>
+  <label for='preferred contact method'>Preferred contact method:</label>
+  <input name='preferred contact method' value="{{ form.reach_me }}">
+<br>
+  <label for='almost there question'>Almost there, additional questions:</label>
+  <input name='almost there question' value="{{ form.almost_there_question }}">
+<br>
+  <label for='current website'>Current Website URL:</label>
+  <input name='current website' value="{{ form.current_website }}">
+<br>
+  <label for='other questions'>Additional information about my website:</label>
+  <input name='other questions' value="{{ form.other_questions }}">
+<br>
+  <label for='secondary contact name'>Secondary Contact Name</label>
+  <input name='secondary contact name' value="{{ form.secondary_contact_name }}">
+<br>
+  <label for='secondary email'>Secondary Email:</label>
+  <input name='secondary email' value="{{ form.secondary_email }}">
+<br>
+  <label for='secondary phone'>Secondary Phone #:</label>
+  <input name='seconday phone' value="{{ form.secondary_phone_number }}">
+<br>
+</form>

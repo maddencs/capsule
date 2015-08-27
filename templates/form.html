@@ -1,0 +1,147 @@
+<form action="/new_site_request/" method="post" name="getstarted" id="getstarted">
+        <input value="admin" name="recipient" type="hidden">
+        <input value="thank-you-form-submission.htm" name="redirect" type="hidden">
+        <input value="Lets Get Started form submission" name="subject" type="hidden">
+        <input value="Contact_Name,email,Studio_Name" name="required" type="hidden">
+        <table width="90%" border="0" cellpadding="6" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="text" width="140"><div align="left">Studio Name: </div>
+                <label></label></td>
+              <td class="text"><div align="left">
+                <input onkeypress="return handleEnter(this, event)" size="50" name="Studio_Name">
+                </div></td>
+              </tr>
+            <tr>
+              <td class="text" width="140"><div align="left">Contact Name: </div></td>
+              <td class="text"><div align="left">
+                <input id="Contact_Name" onkeypress="return handleEnter(this, event)" size="50" name="Contact_Name">
+                </div></td>
+              </tr>
+            <tr>
+              <td class="text" width="140"><div align="left">Email Address:</div></td>
+              <td class="text"><div align="left">
+                <input id="email" onkeypress="return handleEnter(this, event)" size="50" name="email">
+                </div></td>
+              </tr>
+            <tr>
+              <td class="text" width="140"><div align="left">Phone #:</div></td>
+              <td class="text"><div align="left">
+                <input id="Phone_Number" onkeypress="return handleEnter(this, event)" size="50" name="Phone_Number">
+                </div></td>
+              </tr>
+              <div id='secondaryContact'>
+                <tr>
+                  <td class="text" width="140"><div align="left">Contact Name: </div></td>
+                  <td class="text"><div align="left">
+                    <input id="Secondary_Contact_Name" onkeypress="return handleEnter(this, event)" size="50" name="Secondary_Contact_Name">
+                    </div></td>
+                  </tr>
+                <tr>
+                  <td class="text" width="140"><div align="left">Email Address:</div></td>
+                  <td class="text"><div align="left">
+                    <input id="Secondary_email" onkeypress="return handleenter(this, event)" size="50" name="Secondary_email">
+                    </div></td>
+                  </tr>
+                <tr>
+                  <td class="text" width="140"><div align="left">Phone #:</div></td>
+                  <td class="text"><div align="left">
+                    <input id="Secondary_Phone_Number" onkeypress="return handleEnter(this, event)" size="50" name="Secondary_Phone_Number">
+                    </div></td>
+                  </tr>
+
+              </div>
+            <tr>
+              <td colspan="2" class="text"><p align="left"><strong>Do you already have a website?</strong><br>
+                <input name="Current_website_status" type="hidden" value="Unknown">
+                <input value="This is my first studio website" name="Current_website_status" type="radio">
+                This is my dance studio's first website <br>
+                <input value="I already have a website and need  a redesign" name="Current_website_status" type="radio">
+                I already have a website, and am in need   of a redesign<br>
+                <input value="Other" name="Current_website_status" type="radio">
+                Other
+                <input name="Current_website_status_other" id="Current_website_status_other" type="text">
+                </p></td>
+              </tr>
+            <tr>
+              <td colspan="2" class="text"><div align="left">I prefer to be reached by
+                  <input value="Unknown" name="Reach_me" type="hidden">
+                <input value="email" name="Reach_me" type="radio">
+                email,
+                <input value="phone" name="Reach_me" type="radio">
+                phone, or
+                <input value="no preference" name="Reach_me" type="radio">
+                no preference </div></td>
+              </tr>
+            <tr>
+              <td colspan="2" class="text"><p align="left">
+                <input name="Please_send_me_information" type="hidden" value="False">
+                <input id="Please_send_me_information" name="Please_send_me_information" type="checkbox">
+                <strong>Please send me information</strong> about the website design process and costs. </p>
+                <p align="left">
+                <input name="Almost_there_Answer_question" type="hidden" value="False">
+                <input id="Almost_there_Answer_question" name="Almost_there_Answer_question" type="checkbox">
+                  <strong>I'm almost there</strong>, but am not sure if we're a perfect fit. Please answer my question(s) below: </p>
+                <label>
+                <p id="textarea" name="textarea" cols="85">
+                  <textarea name="Almost_there_question" cols="65" class="homepage_header_blue" id="Almost_there_question"></textarea>
+                  </p>
+                </label>
+                <p align="left">
+                <input name='Need_redesign' type="hidden" value="False">
+                <input name='Need_redesign' type="checkbox">
+                  <strong>I need a redesign </strong>of my existing studio website. Please send a quote based on my current   site.<span class="style11">*</span></p>
+                <p align="left">
+                  <label>
+                    <input name="Lets_DO_IT" type="hidden" value="False">
+                    <input id="Lets_DO_IT" name="Lets_DO_IT" type="checkbox">
+                    </label>
+                  <strong>Let's do this   thing!</strong> Please send my website planning worksheet so we can get started. </p>
+                <p align="left">
+                  <label></label>
+                  </p>
+                <p align="left"><span class="style11">*</span> If you already have a studio website   and are in need of a redesign, please enter your current website address below.   We ask this to get an initial sense of your needs, and use it as reference if you  desire a quote based on the number of pages and features   from your current website: </p>
+                <p align="left">What is your studio's current website address?
+                  <input id="My_domain_name_is" onkeypress="return handleEnter(this, event)" value="www." size="45" name="My_domain_name_is">
+                  </p>
+                <p align="left">
+                Is there anything else you'd like to share with us about your   current site or desires for a new one?:
+                <label>
+                  </label></p><p id="textarea" name="textarea" cols="85">
+                  <textarea name="Other_questions" cols="65" class="homepage_header_blue" id="Other_questions"></textarea>
+                  </p></td>
+              </tr>
+            <tr>
+              <td colspan="2" class="text"><div align="left">You'll receive a reply within one business day, with answers to   your questions and information about the process and costs. Once you indicate   you're ready to proceed, you'll receive a link to the website planning worksheet   by email, plus an agreement and instructions on making your first design   payment. We're excited to begin creating your new studio site! </div>
+              </tr>
+            </tbody>
+          </table>
+        <div style="margin-right:60px;" id="submit">
+          <table width="194" align="center" border="0" cellpadding="0" cellspacing="0">
+            <!-- fwtable fwsrc="button_getstarted.png" fwbase="button_getstarted.gif" fwstyle="Dreamweaver" fwdocid = "1599149791" fwnested="0" -->
+            <tbody><tr>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="1" width="175" border="0"></td>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="1" width="19" border="0"></td>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="1" width="1" border="0"></td>
+              </tr>
+            <tr>
+              <td colspan="2"><img name="button_getstarted_r1_c1" src="images/images/button_getstarted_r1_c1.gif" id="button_getstarted_r1_c1" alt="" height="2" width="194" border="0"></td>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="2" width="1" border="0"></td>
+              </tr>
+            <tr>
+              <td><div onclick="document.forms['getstarted'].submit();" onmouseover="MM_nbGroup('over','button_getstarted_r2_c1','images/images/button_getstarted_r2_c1_f2.gif','images/images/button_getstarted_r2_c1_f4.gif',1);" onmouseout="MM_nbGroup('out');"><img name="button_getstarted_r2_c1" src="images/images/button_getstarted_r2_c1.gif" id="button_getstarted_r2_c1" alt="Dance school web design - Let's get started!" height="31" width="175" border="0"></div></td>
+              <td rowspan="2"><img name="button_getstarted_r2_c2" src="images/images/button_getstarted_r2_c2.gif" id="button_getstarted_r2_c2" alt="" height="48" width="19" border="0"></td>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="31" width="1" border="0"></td>
+              </tr>
+            <tr>
+              <td><img name="button_getstarted_r3_c1" src="images/images/button_getstarted_r3_c1.gif" id="button_getstarted_r3_c1" alt="" height="17" width="175" border="0"></td>
+              <td><img src="images/images/spacer.gif" alt="" name="undefined_3" id="undefined_3" height="17" width="1" border="0"></td>
+              </tr>
+            </tbody></table>
+          </div>
+        <p class="text" align="center">&nbsp;</p>
+        <p class="text" align="center"><span class="heading_blue_18">Studio of Dance.com&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+          Portland, OR 97221&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+          Email: admin@studioofdance.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+          Phone: (503) 308-2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </form>
